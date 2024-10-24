@@ -282,7 +282,7 @@ filepath = os.path.join(path,arquivo)
 matriz_distancias = parse_xml(filepath, tag_aninhada)
 
 # Solução Miller, Tucker, Zemlin (MTZ)
-'''
+
 distancia, solucoes,tempo = problema_tsp_mtz (matriz_distancias)
 print(solucoes)
 
@@ -290,11 +290,11 @@ print(solucoes)
 print('[MTZ] Distância total =', distancia)
 print('[MTZ] Tempo de processamento =', tempo)
 print('[MTZ] Tour:')
-'''
+
 # Variável para estabelecer regular a formulação TMZ
 # e ser viável encontrar uma solução válida (uma única subrota)
 
-maxrounds = 1000
+maxrounds = 100
 distancia, solucoes,tempo = problema_tsp_eliminacao_subrota (matriz_distancias, maxrounds)        
 
 # Apresenta as soluções
