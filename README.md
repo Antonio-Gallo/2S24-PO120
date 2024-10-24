@@ -1,0 +1,1 @@
+Projeto realizado para resolver o Problema do Caixeiro Viajante (Travel Salesman Problem) utilizando o repositório tsplib95. Em específico foram realizados testes na "bays29.xml", "brazil58.xml" e "si535.xml".
